@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.venv
+.python-version
+.ruff_cache/
+.pytest_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Weights and outputs
+*.safetensors
+*.pt
+*.ckpt
+checkpoints/
+outputs/
+*.log
+
+# Local credentials, dependencies, and release intermediates
+.env
+.env.*
+!.env.example
+node_modules/
+*.partial

@@ -1,0 +1,36 @@
+[project]
+name = "causalwm"
+version = "0.1.0"
+description = "CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model (inference)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ltx-core",
+    "av>=14.2.1",
+    "numpy",
+    "pillow",
+    "safetensors>=0.5.0",
+    "sentencepiece>=0.2.0",
+    # Tested versions. transformers 5.x is not compatible with the LTX-2 Gemma loader.
+    "torch>=2.9,<2.10",
+    "torchaudio>=2.9,<2.10",
+    "torchvision>=0.24,<0.25",
+    "transformers>=4.57,<5",
+]
+
+[tool.uv.sources]
+ltx-core = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["causalwm"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
