@@ -1,0 +1,6 @@
+rank,model,paper_name,TWB_score,leaderboard_date,checked_on,source
+1,CWM,CausalWM,66.04,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+2,dream4act,dream4act,65.66,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+3,BWM,BWM,65.54,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+4,WoVR_Plus,WoVR_Plus,65.39,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+5,PhyxWM,PhyxWM,64.26,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard

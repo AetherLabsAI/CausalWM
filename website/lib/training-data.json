@@ -1,0 +1,194 @@
+{
+  "source": "CausalWM manuscript, sections/data.tex, Table: Data sources, retained hours, and coverage",
+  "accessed": "2026-09-18",
+  "reportedSourceHours": 31230.8,
+  "reportedRetainedHours": 19916.2,
+  "groups": [
+    {
+      "label": "Human hands",
+      "color": "#20796b"
+    },
+    {
+      "label": "Single-arm",
+      "color": "#437f9a"
+    },
+    {
+      "label": "Dual-arm",
+      "color": "#8260a4"
+    },
+    {
+      "label": "Single- and dual-arm",
+      "color": "#53666a"
+    },
+    {
+      "label": "Human hands + robot arms",
+      "color": "#a37b27"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "Ego4D",
+      "source": 3795.9,
+      "retained": 798.5,
+      "group": 0,
+      "views": "Egocentric",
+      "tasks": "Daily activities"
+    },
+    {
+      "name": "Egocentric-10K",
+      "source": 9980.3,
+      "retained": 6878.2,
+      "group": 0,
+      "views": "Egocentric",
+      "tasks": "Industrial operations"
+    },
+    {
+      "name": "EgoDex",
+      "source": 829.4,
+      "retained": 513.4,
+      "group": 0,
+      "views": "Egocentric",
+      "tasks": "Dexterous manipulation"
+    },
+    {
+      "name": "EPIC-Kitchens",
+      "source": 69.4,
+      "retained": 16.4,
+      "group": 0,
+      "views": "Egocentric",
+      "tasks": "Kitchen activities"
+    },
+    {
+      "name": "H2O",
+      "source": 1.1,
+      "retained": 0.4,
+      "group": 0,
+      "views": "Egocentric + external",
+      "tasks": "Object manipulation"
+    },
+    {
+      "name": "BridgeData V2",
+      "source": 87.0,
+      "retained": 59.0,
+      "group": 1,
+      "views": "External + wrist",
+      "tasks": "Tabletop manipulation"
+    },
+    {
+      "name": "DROID",
+      "source": 273.1,
+      "retained": 189.4,
+      "group": 1,
+      "views": "External + wrist",
+      "tasks": "Household manipulation"
+    },
+    {
+      "name": "OXE",
+      "source": 373.6,
+      "retained": 336.5,
+      "group": 1,
+      "views": "Mixed",
+      "tasks": "Pushing & insertion",
+      "selectedSubset": true
+    },
+    {
+      "name": "RoboCasa365",
+      "source": 1666.3,
+      "retained": 1502.9,
+      "group": 1,
+      "views": "External + wrist",
+      "tasks": "Kitchen manipulation"
+    },
+    {
+      "name": "RT-1",
+      "source": 350.6,
+      "retained": 247.5,
+      "group": 1,
+      "views": "Egocentric",
+      "tasks": "Pick-and-place"
+    },
+    {
+      "name": "AgiBot-World 2026",
+      "source": 284.2,
+      "retained": 220.9,
+      "group": 2,
+      "views": "Egocentric + wrist",
+      "tasks": "Retail & food service"
+    },
+    {
+      "name": "AgiBot-World Beta",
+      "source": 2245.8,
+      "retained": 2022.1,
+      "group": 2,
+      "views": "Egocentric + wrist",
+      "tasks": "Sorting & packing"
+    },
+    {
+      "name": "Galaxea",
+      "source": 540.9,
+      "retained": 485.9,
+      "group": 2,
+      "views": "Egocentric + wrist",
+      "tasks": "Household chores"
+    },
+    {
+      "name": "Humanoid-Everyday",
+      "source": 31.8,
+      "retained": 28.5,
+      "group": 2,
+      "views": "Egocentric",
+      "tasks": "Manipulation & locomotion"
+    },
+    {
+      "name": "RoboCOIN",
+      "source": 489.0,
+      "retained": 488.0,
+      "group": 2,
+      "views": "Mixed",
+      "tasks": "Folding & pouring"
+    },
+    {
+      "name": "RoboTwin 2.0",
+      "source": 162.5,
+      "retained": 113.8,
+      "group": 2,
+      "views": "External + wrist",
+      "tasks": "Stacking & tool use"
+    },
+    {
+      "name": "InternData-A1",
+      "source": 3071.1,
+      "retained": 1507.6,
+      "group": 3,
+      "views": "Mixed",
+      "tasks": "Placement & folding"
+    },
+    {
+      "name": "RoboMIND",
+      "source": 329.3,
+      "retained": 150.5,
+      "group": 3,
+      "views": "Mixed",
+      "tasks": "Placement & pouring"
+    },
+    {
+      "name": "RoVid-X",
+      "source": 5473.0,
+      "retained": 4004.6,
+      "group": 3,
+      "views": "Mixed",
+      "tasks": "Pick-and-place",
+      "selectedSubset": true
+    },
+    {
+      "name": "EgoVerse",
+      "source": 1176.6,
+      "retained": 352.2,
+      "group": 4,
+      "views": "Mixed",
+      "tasks": "Household & assembly"
+    }
+  ],
+  "countingConvention": "Synchronized camera views of the same trajectory are counted only once.",
+  "droidRelease": "DreamZero-DROID"
+}

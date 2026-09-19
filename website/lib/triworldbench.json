@@ -1,0 +1,182 @@
+{
+  "source": "https://triworldbench-triworldbench-space.hf.space/#leaderboard",
+  "checkedOn": "2026-09-16",
+  "publishedModels": 36,
+  "models": [
+    {
+      "rank": 1,
+      "model": "CWM",
+      "score": 66.04
+    },
+    {
+      "rank": 2,
+      "model": "dream4act",
+      "score": 65.66
+    },
+    {
+      "rank": 3,
+      "model": "BWM",
+      "score": 65.54
+    },
+    {
+      "rank": 4,
+      "model": "WoVR_Plus",
+      "score": 65.39
+    },
+    {
+      "rank": 5,
+      "model": "PhyxWM",
+      "score": 64.26
+    }
+  ],
+  "dimensions": [
+    {
+      "name": "Tri-view consistency",
+      "score": 81.99,
+      "rank": 2
+    },
+    {
+      "name": "Task alignment",
+      "score": 84.7,
+      "rank": 3
+    },
+    {
+      "name": "Physical & 3D coherence",
+      "score": 61.21,
+      "rank": 6
+    },
+    {
+      "name": "Motion quality",
+      "score": 42.33,
+      "rank": 2
+    },
+    {
+      "name": "Temporal consistency",
+      "score": 63.45,
+      "rank": 21
+    },
+    {
+      "name": "Visual quality",
+      "score": 34.5,
+      "rank": 2
+    }
+  ],
+  "leaderboardDate": "2026-09-11",
+  "rankSource": "Official leaderboard displayed ranks across all 36 published models",
+  "individualMetrics": [
+    {
+      "name": "Normalized PSNR",
+      "score": 72.41,
+      "rank": 3,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "SSIM",
+      "score": 83.58,
+      "rank": 6,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "VLM Consistency I",
+      "score": 85.83,
+      "rank": 2,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "VLM Consistency II",
+      "score": 84.43,
+      "rank": 3,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "VLM Consistency III",
+      "score": 95.64,
+      "rank": 2,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "VQA Consistency",
+      "score": 70.03,
+      "rank": 2,
+      "dimension": "Tri-view consistency"
+    },
+    {
+      "name": "Instruction Following",
+      "score": 76.78,
+      "rank": 2,
+      "dimension": "Task alignment"
+    },
+    {
+      "name": "Semantic Alignment",
+      "score": 90.02,
+      "rank": 6,
+      "dimension": "Task alignment"
+    },
+    {
+      "name": "JEPA Similarity",
+      "score": 87.31,
+      "rank": 5,
+      "dimension": "Task alignment"
+    },
+    {
+      "name": "Interaction Quality",
+      "score": 31.26,
+      "rank": 10,
+      "dimension": "Physical & 3D coherence"
+    },
+    {
+      "name": "Perspective",
+      "score": 91.16,
+      "rank": 1,
+      "dimension": "Physical & 3D coherence"
+    },
+    {
+      "name": "State Alignment",
+      "score": 61.01,
+      "rank": 10,
+      "dimension": "Motion quality"
+    },
+    {
+      "name": "Flow Score",
+      "score": 22.99,
+      "rank": 6,
+      "dimension": "Motion quality"
+    },
+    {
+      "name": "Trajectory Accuracy",
+      "score": 42.98,
+      "rank": 3,
+      "dimension": "Motion quality"
+    },
+    {
+      "name": "Subject Consistency",
+      "score": 84.55,
+      "rank": 2,
+      "dimension": "Temporal consistency"
+    },
+    {
+      "name": "Background Consistency",
+      "score": 75.54,
+      "rank": 8,
+      "dimension": "Temporal consistency"
+    },
+    {
+      "name": "Photometric Smoothness",
+      "score": 30.28,
+      "rank": 22,
+      "dimension": "Temporal consistency"
+    },
+    {
+      "name": "Image Quality",
+      "score": 43.24,
+      "rank": 1,
+      "dimension": "Visual quality"
+    },
+    {
+      "name": "Aesthetic Quality",
+      "score": 25.76,
+      "rank": 5,
+      "dimension": "Visual quality"
+    }
+  ]
+}

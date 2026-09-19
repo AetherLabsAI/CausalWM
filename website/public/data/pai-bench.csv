@@ -1,0 +1,10 @@
+model,robot_domain_score,provenance,judge,source,evaluation_notes
+Veo-3,86.9,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+LTX-Video-13B,70.1,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+CogVideoX-5b-I2V,74.0,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+Wan2.2-TI2V-5B,79.3,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+Cosmos-Predict2.5-14B,79.9,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+Wan2.1-I2V-14B-720P,80.1,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+Wan2.2-I2V-A14B,81.7,Officially reported,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Official leaderboard score
+Cosmos3-Super,89.7,Evaluated locally,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Local evaluation follows Cosmos 3 technical report inference settings. Local evaluation does not exactly reproduce leaderboard absolute scores.
+CausalWM,89.9,Ours; evaluated locally,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript main PAI-Bench comparison; accessed 2026-09-18,Prompts rewritten to match pretraining captions; 4 steps per CoT stage; classifier-free guidance scale 1; five seeds per prompt. Local evaluation does not exactly reproduce leaderboard absolute scores.

@@ -1,0 +1,21 @@
+dataset,source_hours,retained_hours,embodiment,views,task_coverage,manuscript_accessed
+Ego4D,3795.9,798.5,Human hands,Egocentric,Daily activities,2026-09-18
+Egocentric-10K,9980.3,6878.2,Human hands,Egocentric,Industrial operations,2026-09-18
+EgoDex,829.4,513.4,Human hands,Egocentric,Dexterous manipulation,2026-09-18
+EPIC-Kitchens,69.4,16.4,Human hands,Egocentric,Kitchen activities,2026-09-18
+H2O,1.1,0.4,Human hands,Egocentric + external,Object manipulation,2026-09-18
+BridgeData V2,87.0,59.0,Single-arm,External + wrist,Tabletop manipulation,2026-09-18
+DROID,273.1,189.4,Single-arm,External + wrist,Household manipulation,2026-09-18
+OXE,373.6,336.5,Single-arm,Mixed,Pushing & insertion,2026-09-18
+RoboCasa365,1666.3,1502.9,Single-arm,External + wrist,Kitchen manipulation,2026-09-18
+RT-1,350.6,247.5,Single-arm,Egocentric,Pick-and-place,2026-09-18
+AgiBot-World 2026,284.2,220.9,Dual-arm,Egocentric + wrist,Retail & food service,2026-09-18
+AgiBot-World Beta,2245.8,2022.1,Dual-arm,Egocentric + wrist,Sorting & packing,2026-09-18
+Galaxea,540.9,485.9,Dual-arm,Egocentric + wrist,Household chores,2026-09-18
+Humanoid-Everyday,31.8,28.5,Dual-arm,Egocentric,Manipulation & locomotion,2026-09-18
+RoboCOIN,489.0,488.0,Dual-arm,Mixed,Folding & pouring,2026-09-18
+RoboTwin 2.0,162.5,113.8,Dual-arm,External + wrist,Stacking & tool use,2026-09-18
+InternData-A1,3071.1,1507.6,Single- and dual-arm,Mixed,Placement & folding,2026-09-18
+RoboMIND,329.3,150.5,Single- and dual-arm,Mixed,Placement & pouring,2026-09-18
+RoVid-X,5473.0,4004.6,Single- and dual-arm,Mixed,Pick-and-place,2026-09-18
+EgoVerse,1176.6,352.2,Human hands + robot arms,Mixed,Household & assembly,2026-09-18

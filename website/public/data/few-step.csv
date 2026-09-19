@@ -1,0 +1,7 @@
+flow_steps,pointmap_steps,rgb_steps,robot_domain_score,average_time_seconds,speedup_vs_20_20_20,tasks,seeds_per_task,judge,source
+20,20,20,86.54,76.43,1.00,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16
+10,10,10,86.75,43.97,1.74,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16
+8,8,8,87.53,37.08,2.06,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16
+4,4,4,88.86,24.25,3.15,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16
+2,2,2,88.71,17.35,4.41,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16
+1,1,1,88.84,14.81,5.16,174,5,Qwen3-VL-235B-A22B-Instruct,CausalWM manuscript accessed 2026-09-16

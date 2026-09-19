@@ -1,0 +1,7 @@
+model,dimension,score,official_rank,published_models,leaderboard_date,checked_on,source
+CWM,Tri-view consistency,81.99,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Task alignment,84.70,3,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Physical & 3D coherence,61.21,6,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Motion quality,42.33,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Temporal consistency,63.45,21,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Visual quality,34.50,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard

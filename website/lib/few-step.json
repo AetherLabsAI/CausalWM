@@ -1,0 +1,38 @@
+[
+  {
+    "steps": 20,
+    "score": 86.54,
+    "time": 76.43,
+    "speed": 1.0
+  },
+  {
+    "steps": 10,
+    "score": 86.75,
+    "time": 43.97,
+    "speed": 1.74
+  },
+  {
+    "steps": 8,
+    "score": 87.53,
+    "time": 37.08,
+    "speed": 2.06
+  },
+  {
+    "steps": 4,
+    "score": 88.86,
+    "time": 24.25,
+    "speed": 3.15
+  },
+  {
+    "steps": 2,
+    "score": 88.71,
+    "time": 17.35,
+    "speed": 4.41
+  },
+  {
+    "steps": 1,
+    "score": 88.84,
+    "time": 14.81,
+    "speed": 5.16
+  }
+]

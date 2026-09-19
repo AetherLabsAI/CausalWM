@@ -1,0 +1,46 @@
+{
+  "language": [
+    {
+      "id": "single_arm_0007",
+      "title": "Bottle to drawer",
+      "prompt": "The robotic gripper picks up the blue bottle on the bathroom counter and places it in the open drawer.",
+      "frames": 121,
+      "fps": 16,
+      "steps": [
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "single_arm_0090",
+      "title": "Close the drawer",
+      "prompt": "The robotic gripper closes the file cabinet drawer.",
+      "frames": 121,
+      "fps": 16,
+      "steps": [
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "single_arm_0099",
+      "title": "Retrieve the bottle",
+      "prompt": "The robotic gripper retrieves the deep red glass bottle from the refrigerator.",
+      "frames": 121,
+      "fps": 16,
+      "steps": [
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "triworldbench": {
+    "id": "episode25",
+    "prompt": "Pick up the medium roller with narrower tips using both arms equally",
+    "frames": 96,
+    "fps": 30
+  }
+}

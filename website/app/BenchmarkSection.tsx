@@ -1,0 +1,40 @@
+'use client';
+import {useState} from 'react';
+import {ArrowDown,ArrowUpRight} from 'lucide-react';
+import {Tabs,TabsList,TabsTrigger} from '@/components/ui/tabs';
+import {Accordion,AccordionItem,AccordionTrigger,AccordionContent} from '@/components/ui/accordion';
+import {Table,TableHeader,TableBody,TableRow,TableHead,TableCell} from '@/components/ui/table';
+import leaderboard from '@/lib/triworldbench.json';
+import budgets from '@/lib/few-step.json';
+
+const leadingMetrics=leaderboard.individualMetrics.filter(m=>m.rank<=2).sort((a,b)=>a.rank-b.rank);
+
+export default function BenchmarkSection(){
+ const [budget,setBudget]=useState('1');
+ const current=budgets.find(b=>String(b.steps)===budget)!;
+ const models=leaderboard.models;
+ return <section className="results section wrap" id="results">
+   <div className="section-heading benchmark-heading"><div><p className="eyebrow">01 / BENCHMARK · SEP. 11, 2026</p><h2>TriWorldBench</h2></div><div className="benchmark-intro"><p>Evaluating one consistent robot world across head, left-wrist and right-wrist views.</p><a className="text-link" href={leaderboard.source} target="_blank" rel="noreferrer">Official leaderboard <ArrowUpRight size={16}/></a></div></div>
+   <div className="benchmark-layout">
+     <div className="ranking-panel">
+       <div className="leaderboard-callout"><span className="rank-badge">#1<span>OF 36 MODELS</span></span><div><span className="benchmark-model">CausalWM <small>listed as CWM</small></span><strong>66.04<span>TWB-SCORE</span></strong></div></div>
+       <p className="small-label">OFFICIAL LEADERBOARD / TOP FIVE</p>
+       <Table className="leaderboard-table"><TableHeader><TableRow><TableHead scope="col">Rank</TableHead><TableHead scope="col">Model</TableHead><TableHead scope="col" className="numeric">TWB-Score ↑</TableHead></TableRow></TableHeader><TableBody>{models.map(m=><TableRow key={m.model} className={m.model==='CWM'?'our-result':''}><TableCell>{String(m.rank).padStart(2,'0')}</TableCell><TableCell>{m.model==='CWM'?<><strong>CausalWM</strong><span className="table-alias">CWM</span></>:m.model}</TableCell><TableCell className="numeric">{m.score.toFixed(2)}</TableCell></TableRow>)}</TableBody></Table>
+       <p className="benchmark-source">September 11, 2026 leaderboard snapshot.<br/>Top five of all 36 published models. Scores and ranks reproduced from the official leaderboard.</p>
+       <a className="benchmark-download" href="./data/triworldbench.csv" download>Download leaderboard values <ArrowDown size={14}/></a>
+     </div>
+     <div className="dimension-panel"><p className="small-label">CAUSALWM / INDIVIDUAL METRICS</p><h3>Seven metrics in the top two.</h3><p>2 first-place and 5 second-place results across the 19 official evaluation metrics.</p>
+     <div className="dimension-bars">{leadingMetrics.map(m=><div className={`dimension-row rank-${m.rank}`} key={m.name}><div><span>{m.name}</span><strong><small className="dimension-rank" aria-label={`Rank ${m.rank} of ${leaderboard.publishedModels} models`}>#{m.rank}</small>{m.score.toFixed(2)}</strong></div><div className="dimension-track"><span style={{width:`${m.score}%`}}/></div></div>)}</div><div className="dimension-scale"><span>0</span><span>Higher is better</span><span>100</span></div><p className="benchmark-source">Official individual-metric ranks among all 36 published models · September 11, 2026. Scores are on a 0–100 scale.</p><a className="benchmark-download" href="./data/triworldbench-metrics.csv" download>Download all 19 metric values <ArrowDown size={14}/></a></div>
+   </div>
+   <div className="pai-result" aria-labelledby="pai-heading">
+     <div className="pai-summary"><div><p className="small-label">PAI-BENCH / ROBOT DOMAIN</p><h3 id="pai-heading">Physical reasoning.<br/><em>From language to future.</em></h3><p>Given one observation and a language instruction, CausalWM generates a future through explicit motion and geometry predictions.</p></div><div className="pai-score"><strong>89.9<span>RO SCORE / 100</span></strong><span className="pai-standing">Reaches SOTA</span><p>State-of-the-art performance on language-conditioned robot-domain generation.</p></div></div>
+     <figure className="framework comparison-figure"><a href="./assets/CausalWM_Comparison.pdf?v=bfa81fd29ed9" target="_blank" rel="noreferrer" aria-label="Open the reasoning and benchmark comparison figure"><img src="./assets/CausalWM_Comparison_preview.png?v=bfa81fd29ed9" width="3200" height="1081" loading="lazy" alt="Direct future prediction compared with CausalWM's optical-flow, pointmap and RGB reasoning chain. CausalWM scores 66.04 on TriWorldBench and 89.9 on the PAI-Bench robot domain. The PAI-Bench figure compares Wan2.2-I2V-A14B, Veo 3, Cosmos3-Super and CausalWM."/></a><figcaption><span>Reasoning paradigms and headline results · manuscript illustration</span><a href="./assets/CausalWM_Comparison.pdf?v=bfa81fd29ed9" target="_blank" rel="noreferrer">Open full figure <ArrowUpRight size={16}/></a></figcaption></figure>
+     <div className="pai-protocol"><div><span>Evaluation</span><p>174 prompts × 5 seeds<br/>870 generations · 913 binary VQA questions</p></div><div><span>Generation</span><p>4 / 4 / 4 denoising steps · CFG 1<br/>121 frames at 640 × 480</p></div><div><span>Judge</span><p>Qwen3-VL-235B-A22B-Instruct<br/>Equal weight per video · 0–100 score</p></div></div>
+     <p className="benchmark-source">CausalWM and Cosmos3-Super (89.7) are evaluated locally; other baseline scores come from the official leaderboard. CausalWM uses prompts rewritten to match its pretraining captions, while Cosmos3-Super follows its technical report’s inference settings. The manuscript notes that local evaluation does not exactly reproduce the leaderboard’s absolute scores. The few-step study below is a separate denoising-budget comparison.</p><a className="benchmark-download" href="./data/pai-bench.csv" download>Download all nine PAI-Bench results <ArrowDown size={14}/></a>
+   </div>
+   <div className="few-step-highlight"><div><p className="small-label">PAI-BENCH / FEW-STEP GENERATION</p><h3>One step per stage.<br/><em>Three steps to the future.</em></h3></div><div className="few-step-highlight-values"><div><strong>88.84</strong><span>RO score / 100</span></div><div><strong>5.16<small>×</small></strong><span>Speedup vs. 20/20/20</span></div></div></div>
+   <Accordion className="supplementary-results"><AccordionItem value="few-step"><AccordionTrigger><span>Explore the denoising-budget study<small>Six schedules · optical flow / pointmaps / RGB</small></span></AccordionTrigger><AccordionContent>
+ <article className="few-step"><div className="small-label">LANGUAGE-CONDITIONED · ROBOT DOMAIN</div><h3>PAI-Bench · fewer steps</h3><p className="budget-label">Choose the denoising steps per stage</p><Tabs value={budget} onValueChange={v=>setBudget(String(v))}><TabsList className="budget-list" aria-label="Denoising schedule">{budgets.map(b=><TabsTrigger key={b.steps} value={String(b.steps)}>{b.steps}<span>/{b.steps}/{b.steps}</span></TabsTrigger>)}</TabsList></Tabs><div className="budget-metrics" aria-live="polite"><div><strong>{current.score.toFixed(2)}</strong><span>RO score / 100</span></div><div><strong>{current.speed.toFixed(2)}<small>×</small></strong><span>Speedup vs. 20/20/20</span></div></div><p className="tiny-note">174 tasks × 5 seeds = 870 generations per schedule. Qwen3-VL-235B-A22B-Instruct judge. The 1/1/1 schedule uses three denoising steps across the full chain, scoring only 0.02 below the best observed schedule, 4/4/4.</p></article><div className="results-note"><p><strong>A space–time trade-off.</strong> Intermediate streams add context and attention costs while supporting fewer denoising iterations. The 5.16× speedup compares two CausalWM schedules under fixed settings. This study uses language-conditioned single-view generation; TriWorldBench uses a separately fine-tuned action-conditioned three-view model.</p><a href="./data/few-step.csv" download className="text-link">Download values <ArrowDown size={16}/></a></div>
+   </AccordionContent></AccordionItem></Accordion>
+ </section>;
+}

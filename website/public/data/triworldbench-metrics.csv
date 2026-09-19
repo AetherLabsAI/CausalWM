@@ -1,0 +1,20 @@
+model,metric,dimension,score,official_rank,published_models,leaderboard_date,checked_on,source
+CWM,Normalized PSNR,Tri-view consistency,72.41,3,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,SSIM,Tri-view consistency,83.58,6,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,VLM Consistency I,Tri-view consistency,85.83,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,VLM Consistency II,Tri-view consistency,84.43,3,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,VLM Consistency III,Tri-view consistency,95.64,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,VQA Consistency,Tri-view consistency,70.03,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Instruction Following,Task alignment,76.78,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Semantic Alignment,Task alignment,90.02,6,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,JEPA Similarity,Task alignment,87.31,5,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Interaction Quality,Physical & 3D coherence,31.26,10,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Perspective,Physical & 3D coherence,91.16,1,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,State Alignment,Motion quality,61.01,10,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Flow Score,Motion quality,22.99,6,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Trajectory Accuracy,Motion quality,42.98,3,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Subject Consistency,Temporal consistency,84.55,2,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Background Consistency,Temporal consistency,75.54,8,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Photometric Smoothness,Temporal consistency,30.28,22,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Image Quality,Visual quality,43.24,1,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
+CWM,Aesthetic Quality,Visual quality,25.76,5,36,2026-09-11,2026-09-16,https://triworldbench-triworldbench-space.hf.space/#leaderboard
