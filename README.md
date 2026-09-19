@@ -107,8 +107,8 @@ The manuscript reports the following benchmark results:
 
 TriWorldBench uses the leaderboard snapshot of **September 11, 2026**. PAI-Bench
 uses **Qwen3-VL-235B-A22B-Instruct** as the judge. These values correspond to the
-manuscript's benchmark configurations; see the model card for the settings
-and evaluation of the released checkpoint.
+manuscript's benchmark configurations; see the model card for the inference settings
+of the released checkpoint.
 
 See the [project website](https://aetherlabsai.github.io/CausalWM/) for comparisons,
 the denoising-step study, and qualitative examples.
