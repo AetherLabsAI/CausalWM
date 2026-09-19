@@ -25,7 +25,7 @@
 
 ## 📰 News & Highlights
 
-- **September 2026** · CausalWMv1 TI2V CoT inference code and model weights. The paper is coming soon.
+- **September 2026** · CausalWMv1 TI2V CoT inference code and model weights. The technical report is now available; click the **Technical Report** badge above to read it.
 
 <a id="overview"></a>
 
@@ -213,18 +213,19 @@ docs/                  Inference guide and figures
 
 ## 📝 Citation
 
-The paper is coming soon. If CausalWM is useful for your research, you can cite
-the manuscript as follows; the entry will be updated with its public identifier.
+If CausalWM is useful for your research, please cite our technical report as follows.
+The citation will be updated once the arXiv version is available.
 
 ```bibtex
 @misc{xu2026causalwm,
-  title  = {CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model},
-  author = {Xu, Ziming and Liang, Shuang and Han, Ruobing and Xi, Ziqiao and
-            Rao, Mingxing and Zhou, Kun and Zhang, Zijun and Yan, Yuchen and
-            Wei, Yufan and Huang, Junbo and Shao, Yifei and Nan, Fang and Huang, Biwei},
-  year   = {2026},
-  note   = {Manuscript in preparation},
-  url    = {https://github.com/AetherLabsAI/CausalWM}
+  title        = {CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model},
+  author       = {Xu, Ziming and Liang, Shuang and Han, Ruobing and Xi, Ziqiao and
+                  Rao, Mingxing and Zhou, Kun and Zhang, Zijun and Yan, Yuchen and
+                  Wei, Yufan and Huang, Junbo and Shao, Yifei and Nan, Fang and Huang, Biwei},
+  year         = {2026},
+  howpublished = {OpenReview},
+  url          = {https://openreview.net/forum?id=3pf4d0EEqm},
+  note         = {Preprint}
 }
 ```
 
