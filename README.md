@@ -14,7 +14,7 @@
   <a href="https://openreview.net/pdf?id=3pf4d0EEqm"><img src="https://img.shields.io/badge/Technical_Report-OpenReview-b31b1b?style=flat" alt="Technical Report: OpenReview"></a>
   <a href="https://aetherlabsai.github.io/CausalWM/"><img src="https://img.shields.io/badge/Website-CausalWM-6554c0?style=flat" alt="Website: CausalWM"></a>
   <a href="https://huggingface.co/AetherLabs-AI/CausalWM"><img src="https://img.shields.io/badge/Weights-Hugging_Face-FFD21E?style=flat&amp;logo=huggingface&amp;logoColor=FFD21E" alt="CausalWMv1 on Hugging Face"></a>
-  <a href="https://huggingface.co/Lightricks/LTX-2/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-LTX--2_Community-blue?style=flat" alt="License: LTX-2 Community"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-LTX--2_Community-blue?style=flat" alt="License: LTX-2 Community"></a>
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 
 ## 📰 News & Highlights
 
-- **September 2026** · CausalWMv1 TI2V CoT inference code and model weights. The technical report is now available; click the **Technical Report** badge above to read it.
+- **September 2026** · CausalWMv1 TI2V CoT inference code and model weights. The technical report is now available; click the **Technical Report** badge above to read it. The current released checkpoint is tailored for **PAI-Bench-G**. Additional checkpoints will be released soon.
 
 <a id="overview"></a>
 
