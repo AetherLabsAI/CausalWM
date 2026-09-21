@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "frames": 121,
+    "height": 480,
+    "width": 640,
+    "fps": 16,
+    "steps_flow": 4,
+    "steps_pointmap": 4,
+    "steps_video": 4,
+    "guidance": 1.0
+  },
+  "cases": [
+    {
+      "id": "single_arm_0099",
+      "title": "Retrieve a bottle from the refrigerator",
+      "image": "inputs/single_arm_0099.jpg",
+      "prompt": "The robotic gripper retrieves the deep red glass bottle from the refrigerator.",
+      "seed": 81942,
+      "what_to_watch": "Watch the grasp, the bottle leaving the refrigerator, and object continuity."
+    },
+    {
+      "id": "single_arm_0090",
+      "title": "Close the file cabinet drawer",
+      "image": "inputs/single_arm_0090.jpg",
+      "prompt": "The robotic gripper closes the file cabinet drawer.",
+      "seed": 81554,
+      "what_to_watch": "Watch gripper contact and whether the drawer closes along its track."
+    }
+  ]
+}

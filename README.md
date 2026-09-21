@@ -65,6 +65,50 @@ visualization, and RGB. The preview loops automatically.
 [Watch the full-resolution video](docs/assets/demo-flow-pointmap-rgb.mp4), or explore
 more cases on the [project website](https://aetherlabsai.github.io/CausalWM/).*
 
+### Generated examples
+
+Left to right: **Wan2.2 / LingBot / CausalWM**.
+
+#### Retrieve a bottle from the refrigerator
+
+[![Retrieve a bottle from the refrigerator — Wan2.2 / LingBot / CausalWM](docs/assets/cases/single_arm_0099-comparison.gif)](docs/assets/cases/single_arm_0099-comparison.mp4)
+
+<details>
+<summary>Try this input</summary>
+
+```bash
+python inference.py \
+  --image examples/inputs/single_arm_0099.jpg \
+  --prompt "The robotic gripper retrieves the deep red glass bottle from the refrigerator." \
+  --checkpoint /path/to/CausalWMv1.safetensors \
+  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
+  --text-encoder-dir /path/to/gemma-3-12b \
+  --seed 81942 \
+  --out-dir outputs/single_arm_0099
+```
+
+</details>
+
+#### Close the file cabinet drawer
+
+[![Close the file cabinet drawer — Wan2.2 / LingBot / CausalWM](docs/assets/cases/single_arm_0090-comparison.gif)](docs/assets/cases/single_arm_0090-comparison.mp4)
+
+<details>
+<summary>Try this input</summary>
+
+```bash
+python inference.py \
+  --image examples/inputs/single_arm_0090.jpg \
+  --prompt "The robotic gripper closes the file cabinet drawer." \
+  --checkpoint /path/to/CausalWMv1.safetensors \
+  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
+  --text-encoder-dir /path/to/gemma-3-12b \
+  --seed 81554 \
+  --out-dir outputs/single_arm_0090
+```
+
+</details>
+
 <a id="framework"></a>
 
 ## 🧩 Framework
@@ -120,6 +164,8 @@ the denoising-step study, and qualitative examples.
 **Hugging Face repository: [AetherLabs-AI/CausalWM](https://huggingface.co/AetherLabs-AI/CausalWM)**
 
 Checkpoint: **`CausalWMv1.safetensors`**.
+
+The current released checkpoint is tailored for **PAI-Bench-G**. Additional checkpoints will be released soon.
 
 Inference uses three local assets:
 
@@ -197,7 +243,8 @@ and output conventions.
 inference.py           TI2V inference entrypoint
 causalwm/              Causal sampler, stream codecs, and checkpoint loading
 packages/ltx-core/     LTX-2 core with the multi-stream causal Transformer
-docs/                  Inference guide and figures
+docs/                  Inference guide, figures, and case study videos
+examples/              Case study initial frames and captions
 ```
 
 <a id="documentation"></a>
