@@ -11,7 +11,7 @@
 </h2>
 
 <p align="center">
-  <a href="https://openreview.net/pdf?id=3pf4d0EEqm"><img src="https://img.shields.io/badge/Technical_Report-OpenReview-b31b1b?style=flat" alt="Technical Report: OpenReview"></a>
+  <a href="https://arxiv.org/pdf/2609.23184"><img src="https://img.shields.io/badge/Technical_Report-arXiv-b31b1b?style=flat" alt="Technical Report: arXiv"></a>
   <a href="https://aetherlabsai.github.io/CausalWM/"><img src="https://img.shields.io/badge/Website-CausalWM-6554c0?style=flat" alt="Website: CausalWM"></a>
   <a href="https://huggingface.co/AetherLabs-AI/CausalWM"><img src="https://img.shields.io/badge/Weights-Hugging_Face-FFD21E?style=flat&amp;logo=huggingface&amp;logoColor=FFD21E" alt="CausalWMv1 on Hugging Face"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-LTX--2_Community-blue?style=flat" alt="License: LTX-2 Community"></a>
@@ -260,19 +260,17 @@ examples/              Case study initial frames and captions
 
 ## 📝 Citation
 
-If CausalWM is useful for your research, please cite our technical report as follows.
-The citation will be updated once the arXiv version is available.
+If CausalWM is useful for your research, please cite our paper:
 
 ```bibtex
-@misc{xu2026causalwm,
-  title        = {CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model},
-  author       = {Xu, Ziming and Liang, Shuang and Han, Ruobing and Xi, Ziqiao and
-                  Rao, Mingxing and Zhou, Kun and Zhang, Zijun and Yan, Yuchen and
-                  Wei, Yufan and Huang, Junbo and Shao, Yifei and Nan, Fang and Huang, Biwei},
-  year         = {2026},
-  howpublished = {OpenReview},
-  url          = {https://openreview.net/forum?id=3pf4d0EEqm},
-  note         = {Preprint}
+@misc{xu2026causalwmcausalchainofthoughtreasoning,
+  title={CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model},
+  author={Ziming Xu and Shuang Liang and Ruobing Han and Ziqiao Xi and Mingxing Rao and Kun Zhou and Zijun Zhang and Yuchen Yan and Yufan Wei and Junbo Huang and Yifei Shao and Fang Nan and Biwei Huang},
+  year={2026},
+  eprint={2609.23184},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2609.23184},
 }
 ```
 
