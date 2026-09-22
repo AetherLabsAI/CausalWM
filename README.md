@@ -69,29 +69,9 @@ more cases on the [project website](https://aetherlabsai.github.io/CausalWM/).*
 
 Left to right: **Wan2.2 / LingBot / CausalWM**.
 
-#### Retrieve a bottle from the refrigerator
-
-[![Retrieve a bottle from the refrigerator — Wan2.2 / LingBot / CausalWM](docs/assets/cases/single_arm_0099-comparison.gif)](docs/assets/cases/single_arm_0099-comparison.mp4)
-
-<details>
-<summary>Try this input</summary>
-
-```bash
-python inference.py \
-  --image examples/inputs/single_arm_0099.jpg \
-  --prompt "The robotic gripper retrieves the deep red glass bottle from the refrigerator." \
-  --checkpoint /path/to/CausalWMv1.safetensors \
-  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
-  --text-encoder-dir /path/to/gemma-3-12b \
-  --seed 81942 \
-  --out-dir outputs/single_arm_0099
-```
-
-</details>
-
 #### Close the file cabinet drawer
 
-[![Close the file cabinet drawer — Wan2.2 / LingBot / CausalWM](docs/assets/cases/single_arm_0090-comparison.gif)](docs/assets/cases/single_arm_0090-comparison.mp4)
+[![Close the file cabinet drawer](docs/assets/cases/single_arm_0090-comparison.gif)](docs/assets/cases/single_arm_0090-comparison.mp4)
 
 <details>
 <summary>Try this input</summary>
@@ -105,6 +85,66 @@ python inference.py \
   --text-encoder-dir /path/to/gemma-3-12b \
   --seed 81554 \
   --out-dir outputs/single_arm_0090
+```
+
+</details>
+
+#### Move the cloth across the countertop
+
+[![Move the cloth across the countertop](docs/assets/cases/robot_032-comparison.gif)](docs/assets/cases/robot_032-comparison.mp4)
+
+<details>
+<summary>Try this input</summary>
+
+```bash
+python inference.py \
+  --image examples/inputs/robot_032.jpg \
+  --prompt "move the orange cloth across the countertop to clean it." \
+  --checkpoint /path/to/CausalWMv1.safetensors \
+  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
+  --text-encoder-dir /path/to/gemma-3-12b \
+  --seed 0 \
+  --out-dir outputs/robot_032
+```
+
+</details>
+
+#### Pass the green object between two arms
+
+[![Pass the green object between two arms](docs/assets/cases/robot_068-comparison.gif)](docs/assets/cases/robot_068-comparison.mp4)
+
+<details>
+<summary>Try this input</summary>
+
+```bash
+python inference.py \
+  --image examples/inputs/robot_068.jpg \
+  --prompt "Pick up the green object from the clear plate with the right arm. Pass the held green object to the left arm with the right arm. Place the held green object on the green plate with the left arm." \
+  --checkpoint /path/to/CausalWMv1.safetensors \
+  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
+  --text-encoder-dir /path/to/gemma-3-12b \
+  --seed 0 \
+  --out-dir outputs/robot_068
+```
+
+</details>
+
+#### Retrieve a bottle from the refrigerator
+
+[![Retrieve a bottle from the refrigerator](docs/assets/cases/single_arm_0099-comparison.gif)](docs/assets/cases/single_arm_0099-comparison.mp4)
+
+<details>
+<summary>Try this input</summary>
+
+```bash
+python inference.py \
+  --image examples/inputs/single_arm_0099.jpg \
+  --prompt "The robotic gripper retrieves the deep red glass bottle from the refrigerator." \
+  --checkpoint /path/to/CausalWMv1.safetensors \
+  --base-ckpt /path/to/ltx-2.3-22b-dev.safetensors \
+  --text-encoder-dir /path/to/gemma-3-12b \
+  --seed 81942 \
+  --out-dir outputs/single_arm_0099
 ```
 
 </details>
