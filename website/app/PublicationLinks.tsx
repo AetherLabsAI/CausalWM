@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 
 const resources = [
-  { label: 'Paper', href: 'https://openreview.net/pdf?id=3pf4d0EEqm' },
+  { label: 'Paper', href: 'https://arxiv.org/pdf/2609.23184' },
   { label: 'Code', href: 'https://github.com/AetherLabsAI/CausalWM' },
   { label: 'Model weights', href: 'https://huggingface.co/AetherLabs-AI/CausalWM' },
 ];
